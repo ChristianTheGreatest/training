@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="library_customer" model="ir.ui.view">
+            <field name="model">library.customer</field>
+            <field name="name">library.customer.tree</field>
+            <field name="priority">16</field>
+            <field name="arch" type="xml">
+                <tree string="Customers">
+                    <field name="name"/>
+                    <field name="age"/>    
+                </tree>
+            </field>
+        </record>
+
+        <record id="library_customer_action" model="ir.actions.act_window">
+            <field name="name">Book</field>
+            <field name="res_model">library.book</field>
+            <field name="context"></field>
+            <field name="domain"></field>
+        </record>
+
+        <menuitem id="library_customer_menu"
+                  action="library_customer_action"
+                  name="Customer"
+                  parent="library_main_menu" 
+                  sequence="4"
+                  />
+        
+    </data>
+</odoo>
