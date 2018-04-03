@@ -24,12 +24,14 @@
                     <header/>
 
                     <sheet>
-                    <field name="cover" widget="image"/>    
+                    <field name="cover" widget="image" class="oe_avatar"/>    
                         <group>
                             <field name="name"/>
                             <field name="publisher"/>
                             <field name="copies"/>
                             <field name="published_date"/>
+                            <field name="minimum_quantity"/>
+                            <field name="needs_reorder"/>
                         </group>
                         <notebook>
                             <page string="Authors">

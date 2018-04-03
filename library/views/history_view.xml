@@ -10,6 +10,7 @@
                     <field name="name"/>
                     <field name="book_id"/>
                     <field name="customer_id"/>
+                    <field name="returned"/>
                 </tree>
             </field>
         </record>
@@ -28,6 +29,7 @@
                             <field name="book_id"/>
                             <field name="customer_id"/>
                             <field name="checked_out"/>
+                            <field name="returned"/>
                         </group>
                     </sheet>
                 </form>
